@@ -113,9 +113,7 @@ namespace MagneticStripeReaderSample
                             _claimedReader.SetErrorReportingType(MagneticStripeReaderErrorReportingType.TrackLevel);
 
                             _claimedReader.VendorSpecificDataReceived += OnVendorSpecificCardDataReceived;
-
-                            _claimedReader.TracksToRead = MagneticStripeReaderTrackIds.Track1|MagneticStripeReaderTrackIds.Track2|MagneticStripeReaderTrackIds.Track3;
-                       
+                     
 
                             await _claimedReader.EnableAsync();
 
